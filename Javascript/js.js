@@ -22,7 +22,7 @@ function addItem() {
   toDo.addEventListener("click", function () {
     toDo.style.textDecoration = "line-through";
     toDo.classList.add("crossedOut");
-    toDo.style.textDecorationColor = "blue";
+    toDo.style.textDecorationColor = "brown";
     allItems = document.querySelectorAll("li").length - document.querySelectorAll(".crossedOut").length
   document.querySelector(".remaining").innerText = allItems
   });
@@ -43,3 +43,11 @@ addButton.addEventListener("click", addItem);
 // above refers to function to re-call from line 4
 
 querySelectorAll(li).length;
+
+
+// stop allowing empty UL
+//function addButton () {
+//  if (todoInput.value === '') return;
+//  const li = document.createElement ('li');
+
+
